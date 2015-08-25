@@ -5,6 +5,8 @@
 
 Now we have two branches of our ECS implementation. One is totally compatible with OpenDayLight, which located in `master`. The other branch `feature/ecs` has the latest code. These codes can still work with original ODL but it works well with our modified L2Switch module beacuse OpenDayLight couldn't provide enough information for ECS.
 
+
+
 ## Introduction
 
 ECS is the abbreviation of `Endpoint Cost Service`, which provides the routing cost between endpoints. ECS could provide the routing cost, by collecting raw networking data from OpenDayLight, whith different metrics such as hop counts, bandwidth and user defiened routing cost. This design document contains the information about our latest ECS implementation. 
@@ -20,13 +22,28 @@ State the purpose of the document; something like: this is functional specificat
 
 ## Glossary
 
-* Switch:
-* Switching:
-* Route:
-* Routing:
-* Layer 2 Switch:
-* Layer 3 Switch:
-* Endpint:
+* Switch: 
+* Switching: The packets are moved within the same network and are forwarded based on the destination MAC address.
+* Route: 
+* Routing: The packets can be transfered between networks using IP address to determine the destination.
+* Layer 2 Switch: 
+* Layer 3 Switch: 
+* Endpoint: An endpoint is an application or host that is capable of communicating (sendind and/or receiving messages) on a network. An endpoint is typically either a resource provider or a resource consumer.
+
+##Features
+The features that provides now:
+
+* Hop count 
+	* Count the number of hops between the given source and destination based on the routing path.
+* Routing cost
+	* Compute the routing cost between the given source and destination based on the routing path.
+* Bandwidth
+	* Compute the available bandwidth between the given source and destination based on the routing path.
+	
+The features that will provides in the future:
+
+* 
+
 
 ## Use Cases
 
