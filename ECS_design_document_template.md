@@ -1,5 +1,25 @@
 # ECS Design and Implementation Document
-----
+
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
+**Table of Contents**
+
+- [ECS Design and Implementation Document](#ecs-design-and-implementation-document)
+    - [Branch](#branch)
+    - [Introduction](#introduction)
+    - [Purpose](#purpose)
+    - [References](#references)
+    - [Glossary](#glossary)
+    - [Features](#features)
+    - [Use Cases](#use-cases)
+    - [Architecture and Design description](#architecture-and-design-description)
+    - [Services APIs/User Interface](#services-apisuser-interface)
+    - [Usage Impact](#usage-impact)
+    - [TODO List](#todo-list)
+    - [Appendix](#appendix)
+
+<!-- markdown-toc end -->
+
+---
 
 ## Branch
 
@@ -31,14 +51,20 @@ State the purpose of the document; something like: this is functional specificat
 * Endpoint: An endpoint is an application or host that is capable of communicating (sendind and/or receiving messages) on a network. An endpoint is typically either a resource provider or a resource consumer.
 
 ## Features
+
 The features that provides now:
 
-* Hop count 
-	* Count the number of hops between the given source and destination based on the routing path.
-* Routing cost
-	* Compute the routing cost between the given source and destination based on the routing path.
-* Bandwidth
-	* Compute the available bandwidth between the given source and destination based on the routing path.
+* Hop count:
+
+    Count the number of hops between the given source and destination based on the routing path.
+
+* Routing cost:
+
+    Compute the routing cost between the given source and destination based on the routing path.
+
+* Bandwidth:
+
+    Compute the available bandwidth between the given source and destination based on the routing path.
 	
 The features that will provides in the future:
 
