@@ -1,5 +1,25 @@
 # ECS Design and Implementation Document
-----
+
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
+**Table of Contents**
+
+- [ECS Design and Implementation Document](#ecs-design-and-implementation-document)
+    - [Branch](#branch)
+    - [Introduction](#introduction)
+    - [Purpose](#purpose)
+    - [References](#references)
+    - [Glossary](#glossary)
+    - [Features](#features)
+    - [Use Cases](#use-cases)
+    - [Architecture and Design description](#architecture-and-design-description)
+    - [Services APIs/User Interface](#services-apisuser-interface)
+    - [Usage Impact](#usage-impact)
+    - [TODO List](#todo-list)
+    - [Appendix](#appendix)
+
+<!-- markdown-toc end -->
+
+---
 
 ## Branch
 
@@ -9,6 +29,24 @@ Now we have two branches of our ECS implementation. One is totally compatible wi
 
 ECS is the abbreviation of `Endpoint Cost Service`, which provides the routing cost between endpoints. ECS accepts the pair of endpoints returns the routing cost of the pair. It provide the routing cost, by collecting raw networking data from OpenDayLight, whith different metrics such as hop counts, bandwidth and user defiened routing cost. This design document contains the information about our latest ECS implementation.
 
+
+## Features
+
+The features that provides now:
+
+* Hop count:
+
+    Count the number of hops between the given source and destination based on the routing path.
+
+* Routing cost:
+
+    Compute the routing cost between the given source and destination based on the routing path.
+
+* Bandwidth:
+
+    Compute the available bandwidth between the given source and destination based on the routing path.
+	
+
 ## References
 
 * [RFC7285](https://tools.ietf.org/html/rfc7285): Application-Layer Traffic Optimization (ALTO) Protocol
@@ -16,8 +54,13 @@ ECS is the abbreviation of `Endpoint Cost Service`, which provides the routing c
 
 ## Glossary
 
-* Routing service: 
-* Endpint: same as the defination from RFC7285.
+* Switch: 
+* Switching: The packets are moved within the same network and are forwarded based on the destination MAC address.
+* Route: 
+* Routing: The packets can be transfered between networks using IP address to determine the destination.
+* Layer 2 Switch: 
+* Layer 3 Switch: 
+* Endpoint: An endpoint is an application or host that is capable of communicating (sendind and/or receiving messages) on a network. An endpoint is typically either a resource provider or a resource consumer.
 
 ## Limitations
 
