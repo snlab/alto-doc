@@ -2,10 +2,10 @@
 ----
 
 ##Branch
-Now we have two branches of our ECS implementation. One is totally compatible with OpenDayLight, which located in `master`. The other branch `feature/ecs` has the latest code. But it depend on a modified L2Switch module beacuse OpenDayLight couldn't provide enough information for ECS.
+Now we have two branches of our ECS implementation. One is totally compatible with OpenDayLight, which located in `master`. The other branch `feature/ecs` has the latest code. These codes can still work in original ODL but it works well on our modified L2Switch module beacuse OpenDayLight couldn't provide enough information for ECS.
 
 ##Introduction
-ECS is the abbreviation of `Endpoint Cost Service`, which provides the routing cost information between endpoints. This design document contains the structure of our ECS implementation. 
+ECS is the abbreviation of `Endpoint Cost Service`, which provides the routing cost between endpoints. This design document contains the design and implementation information of our latest ECS implementation. 
 
 ##Purpose
 State the purpose of the document; something like: this is functional specificationS of feature "..." which has Jira ID CS-xyzw
@@ -16,8 +16,12 @@ State the purpose of the document; something like: this is functional specificat
 
 
 ##Glossary
-* Layer 2 Switching:
-* Layer 3 Routing:
+* Switch:
+* Switching:
+* Route:
+* Routing:
+* Layer 2 Switch:
+* Layer 3 Switch:
 * Endpint:
 * 
 
@@ -79,6 +83,10 @@ put the relevant use case/stories to explain how the feature is going to be used
 ##Usage Impact
 * Are there any entities being created that require usage reporting for billing purposes? 
 * Does this change any existing entities for which usage is being tracked already?
+
+##TODO List
+* A general routing service in ODL: OpenDayLight provides insufficient details of routing information. It even DO NOT have a general routing service. So current we manage to modify the original l2switch module to get actually routing between endpoints.
+* Make ECS independenly: Now ECS depend on L2 Switch and OpenDayLight. It's not a good design because ECS may gather data from mutliple information sources. The ECS should only depend on the data not an module.
 
 ##Appendix
 Appendix A:
