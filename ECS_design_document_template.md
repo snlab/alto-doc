@@ -30,7 +30,7 @@ State the purpose of the document; something like: this is functional specificat
 * Layer 3 Switch: 
 * Endpoint: An endpoint is an application or host that is capable of communicating (sendind and/or receiving messages) on a network. An endpoint is typically either a resource provider or a resource consumer.
 
-##Features
+## Features
 The features that provides now:
 
 * Hop count 
