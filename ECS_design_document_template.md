@@ -1,21 +1,24 @@
-#ECS Design Document
+#ECS Design and Implementation Document
 ----
 
 ##Branch
-What branch is this work being done in
+Now we have two branches of our ECS implementation. One is totally compatible with OpenDayLight, which located in `master`. The other branch `feature/ecs` has the latest code. But it depend on a modified L2Switch module beacuse OpenDayLight couldn't provide enough information for ECS.
 
 ##Introduction
+ECS is the abbreviation of `Endpoint Cost Service`, which provides the routing cost information between endpoints. This design document contains the structure of our ECS implementation. 
 
 ##Purpose
 State the purpose of the document; something like: this is functional specificationS of feature "..." which has Jira ID CS-xyzw
 
 ##References
-* relevant links
+* [RFC7285](https://tools.ietf.org/html/rfc7285): Application-Layer Traffic Optimization (ALTO) Protocol
+* [L2 Switch](https://wiki.opendaylight.org/view/L2_Switch:Main): Dependency of ECS 
 
 
 ##Glossary
 * Layer 2 Switching:
 * Layer 3 Routing:
+* Endpint:
 * 
 
 ##Feature Specifications
@@ -54,6 +57,8 @@ those workarounds do exist ofcourse.
 	* list your evaluation of possible security attacks against the feature and the answers in your design* *
 * explain marketing specifications
 explain levels or types of users communities of this feature (e.g. admin, user, etc)
+
+##Structure
 
 ##Use Cases
 put the relevant use case/stories to explain how the feature is going to be used/work
