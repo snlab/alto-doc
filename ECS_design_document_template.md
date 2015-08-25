@@ -117,26 +117,38 @@ ECS has two module in current ALTO implementation, `alto-provider` module, which
 
 ### Dependencies
 
-* L2 Switch
+* A modified L2 Switch:
+  We use a modified L2 Switch from ODL because two reason. First is that ODL didn't provide routing service or another switching module. So ODL's default selection is L2 Switch. Second is that the L2 Switch from ODL use Spain Tree Protocol (STP) as default switching protocol. It's not good enough because STP cause flooding. Each packet in the network managed by L2 Switch would fowrarded to all hosts so the network will be inefficiency. Since L2 Switch has legacy codes from Hydrogen release, which use shortest path algorithm to switching. We modified the L2 Switch to enable Dijkstra algorithm using the lagacy codes. And we also privide a routing service in L2 Switch to calculate the real path between endpoints.
 
-### `alto-provider`
+### `alto-provider` Overview
+
+TODO
+
+### `alto-network` Overview
+
+TODO
 
 ## Services APIs/User Interface
 
 ### Northbound APIs defniened by RFC7285
 
+Please see details from [RFC7285]
+
 ### User defiened routing cost computation
+
+TODO
 
 ### User defiened routing service
 
+Now we define the routing service interface by java:
+
+```java
+public interface NetworkGraphService {
+  public List<Link> getPath(NodeId sourceNodeId, NodeId destinationNodeId);
+}
+```
 
 ## TODO List
 
 * A general routing service in ODL: OpenDayLight provides insufficient details of routing information. It even DO NOT have a general routing service. So current we manage to modify the original l2switch module to get actually routing between endpoints.
 * Make ECS independenly: Now ECS depend on L2 Switch and OpenDayLight. It's not a good design because ECS may gather data from mutliple information sources. The ECS should only depend on the data not an module.
-
-## Appendix
-
-Appendix A:
-
-Appendix B:
