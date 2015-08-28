@@ -60,7 +60,7 @@ The features that provides now:
 ## Glossary
 
 * Switching: 
-	The packets are moved within the same network and are forwarded based on the destination MAC address
+	The packets are moved within the same network and are forwarded based on the destination MAC address.
 	
 * Routing: 
 	The packets can be transferred between networks using IP address to determine the destination.
@@ -129,7 +129,7 @@ SWITCH cost metric:
     CASE bandwidth: RETURN the maximal bandwidth in given multi-paths;
     CASE routingcost:
         IF user provides routing cost function RETURN the function's result;
-        ELSE RETURN our default function's resulti;
+        ELSE RETURN our default function's result;
     DEFAULT:
         RETURN null;
 ```
@@ -164,7 +164,7 @@ alto-network module provide two services, the `__Network Element Service__` and 
 
 #### Network Element Query Services
 
-Nework Element Query Services support queries of three different network element, including host nodes, flow capable nodes and links, as well as properties of them.
+Network Element Query Services support queries of three different network element, including host nodes, flow capable nodes and links, as well as properties of them.
 
 ##### Interface
 
@@ -260,7 +260,7 @@ Please see details from [RFC7285](https://tools.ietf.org/html/rfc7285)
 
 * User defined routing cost computation
 
-	Make the routing cost computation flexiable enough to support custom cost types and cost metrics.
+	Make the routing cost computation flexible enough to support custom cost types and cost metrics.
 
 * A general routing service provider module in ODL: 
 
