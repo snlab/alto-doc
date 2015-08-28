@@ -235,7 +235,7 @@ With the help of APIs defined above and their implementations, we defined and im
 
 Since the path calculated could be a graph instead of a line, we define class LinkNode to represent the node in the graph. Packets fields are wrapped in instance of class __MatchFields__.
 
-```
+```java
 public interface RoutingPathService {
 
 	public LinkNode buildRoutePath(MatchFields matchFields);
