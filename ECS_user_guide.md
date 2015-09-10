@@ -1,10 +1,13 @@
 # User Guide for Endpoint Cost Service(ECS) 
+
 ----
 
 ## Introduction
+
 ECS is the abbreviation of **Endpoint Cost Service**, which provides the routing cost between endpoints. ECS accepts the pair of endpoints and returns the routing cost of the pair. It provides the routing cost by collecting raw networking data from OpenDayLight with different metrics such as hop counts, bandwidth and user-defined routing cost. This design document contains the information about our latest ECS implementation.
 
 ## Features
+
 The features that ECS provides are showed below:
 
 * Hop count:
@@ -24,24 +27,50 @@ The features that ECS provides are showed below:
 ### Install ALTO Project
 
 #### Prerequisites
+
 * [Development Environment Setup for ODL](https://wiki.opendaylight.org/view/GettingStarted:Development_Environment_Setup).
 	* **Important:** Don’t forget to edit your ~/.m2/settings.xml file otherwise you will not be able to download any ODL Java dependencies.
 
 #### Get ALTO project
+
 TODO
 
 #### Build and Install ALTO
+
 * Enter your ALTO project root directory.
 * Checkout to feature/ecs branch and run `mvn install` to build ALTO project.
 
 ### Replace L2 Switch
+
 * Get modified l2switch code.(TODO)
 * Put the l2switch folder into ~/.m2/repository/org/opendaylight/ and replace the original l2switch folder.
 
 ## Using Endpoint Cost Service in ALTO
 
 ### Run ALTO in Karaf
-* Enter into alto-karaf/target/assembly/ directory.* Run command ./bin/karaf to start the karaf.	* It will take some time to install features, initialize services and download dependencies. Be patient and check ./data/log/karaf.log file to track the latest status.
+
+* Enter into alto-karaf/target/assembly/ directory.
+* Run command `./bin/karaf` to start the karaf.
+* It will take some time to install features, initialize services and download dependencies. Be patient and check ./data/log/karaf.log file to track the latest status.
+
+``` bash
+$ cd alto-karaf/target/assembly
+$ ./bin/karaf
+
+    ________                       ________                .__  .__       .__     __
+    \_____  \ ______   ____   ____ \______ \ _____  ___.__.|  | |__| ____ |  |___/  |_
+     /   |   \\____ \_/ __ \ /    \ |    |  \\__  \<   |  ||  | |  |/ ___\|  |  \   __\
+    /    |    \  |_> >  ___/|   |  \|    `   \/ __ \\___  ||  |_|  / /_/  >   Y  \  |
+    \_______  /   __/ \___  >___|  /_______  (____  / ____||____/__\___  /|___|  /__|
+            \/|__|        \/     \/        \/     \/\/            /_____/      \/
+ 
+ 
+ Hit '<tab>' for a list of available commands
+ and '[cmd] --help' for help on a specific command.
+ Hit '<ctrl-d>' or type 'system:shutdown' or 'logout' to shutdown OpenDaylight.
+
+ opendaylight-user@root>
+```
 
 ### Input 
 
@@ -56,6 +85,7 @@ TODO
 
 
 ## Appendix
+
 Appendix A:
 
 Appendix B:
