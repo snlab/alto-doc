@@ -10,8 +10,11 @@ This section will introduces the architecture of ALTO.
 
 ### Overview
 
+TODO: needs a diagram.
+
 ### The work flow in ALTO
 
+TODO: needs a diagram.
 
 ### The modules in ALTO
 
@@ -23,6 +26,7 @@ This section will introduces the architecture of ALTO.
 - alto-network: Provides network related functions. Such as the readers of flow table, topology. And the utilities may be used by endpoints cost service. 
 - alto-northbound: Provides the northbound restful services by jersery.
 - alto-provider: Provides a basic implementation of endpoints cost service.
+- alto-service: Defines the interface of services in ALTO.
 
 ### IRD
 
