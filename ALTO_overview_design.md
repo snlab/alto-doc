@@ -2,7 +2,7 @@
 
 ## The current status of ALTO
 
-ALTO still in developing as a part of OpenDayLight. It provides the services defined in [RFC7185](https://tools.ietf.org/html/rfc7285). But now ALTO has some limitations: the IRD and cost map mast be loaded manually and the endpoints cost service depends on a self-modified L2Switch. 
+ALTO still in developing as a part of OpenDayLight. It provides the services defined in [RFC7285](https://tools.ietf.org/html/rfc7285). But now ALTO has some limitations: the IRD and cost map mast be loaded manually and the endpoints cost service depends on a self-modified L2Switch. 
 
 ## Architecture
 
@@ -10,11 +10,11 @@ This section will introduces the architecture of ALTO.
 
 ### Overview
 
-TODO: needs a diagram.
+![ALTO Architecture Overview](resource/alto-architecture.svg)
 
 ### The work flow in ALTO
 
-TODO: needs a diagram.
+![ALTO Worlflow](resource/alto-workflow.svg)
 
 ### The modules in ALTO
 

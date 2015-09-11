@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- 由 Microsoft Visio, SVG Export 生成 alto-workflow.svg 页-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		width="6.39251in" height="7.29195in" viewBox="0 0 460.261 525.021" xml:space="preserve" color-interpolation-filters="sRGB"
+		class="st13">
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st2 {fill:#000000;font-family:宋体;font-size:1.33333em}
+		.st3 {marker-end:url(#mrkr7-21);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st4 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.22935779816514}
+		.st5 {stroke:#000000;stroke-dasharray:5.25,3.75;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st6 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st7 {fill:#000000;font-family:宋体;font-size:1.00001em}
+		.st8 {font-size:1em}
+		.st9 {fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75;visibility:hidden}
+		.st10 {fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st11 {fill:#000000;font-family:宋体;font-size:0.833336em}
+		.st12 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st13 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Markers">
+		<g id="lend7">
+			<path
+					d="M 1.84309 -0.959455 C 1.43792 -0.3808 0.784502 -0.0260248 0.0785258 -0.00137083 L 0.0785228 0.00137063 C 0.784499 0.0260235 1.43791 0.380798 1.84309 0.959452 "
+					style="stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+		</g>
+		<marker id="mrkr7-21" class="st4" orient="auto" markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend7" transform="scale(-4.36,-4.36) "/>
+		</marker>
+	</defs>
+	<g>
+		<title>页-1</title>
+		<g id="shape6-1" transform="translate(218.941,-487.112)">
+			<title>矩形</title>
+			<desc>APP</desc>
+			<rect x="0" y="488.737" width="113.386" height="36.2835" class="st1"/>
+			<text x="44.69" y="511.68" class="st2">APP</text>		</g>
+		<g id="shape7-4" transform="translate(199.546,-415.112)">
+			<title>矩形.7</title>
+			<desc>ALTO Northbound</desc>
+			<rect x="0" y="488.737" width="152.176" height="36.2835" class="st1"/>
+			<text x="16.09" y="511.68" class="st2">ALTO Northbound</text>		</g>
+		<g id="shape8-7" transform="translate(199.546,-343.112)">
+			<title>矩形.8</title>
+			<desc>ALTO Service</desc>
+			<rect x="0" y="488.737" width="152.176" height="36.2835" class="st1"/>
+			<text x="28.09" y="511.68" class="st2">ALTO Service</text>		</g>
+		<g id="shape9-10" transform="translate(293.537,-271.112)">
+			<title>矩形.9</title>
+			<desc>ALTO Provider</desc>
+			<rect x="0" y="488.737" width="152.176" height="36.2835" class="st1"/>
+			<text x="24.09" y="511.68" class="st2">ALTO Provider</text>		</g>
+		<g id="shape14-13" transform="translate(293.537,-206.482)">
+			<title>矩形.14</title>
+			<desc>ALTO Network</desc>
+			<rect x="0" y="488.737" width="152.176" height="36.2835" class="st1"/>
+			<text x="28.09" y="511.68" class="st2">ALTO Network</text>		</g>
+		<g id="shape15-16" transform="translate(268.547,-487.112)">
+			<title>动态连接线</title>
+			<path d="M7.09 525.02 L7.09 560.74" class="st3"/>
+		</g>
+		<g id="shape16-22" transform="translate(268.547,-415.112)">
+			<title>动态连接线.16</title>
+			<path d="M7.09 525.02 L7.09 560.74" class="st3"/>
+		</g>
+		<g id="shape19-27" transform="translate(0.375,-468.314)">
+			<title>工作表.19</title>
+			<path d="M0 525.02 L459.51 525.02" class="st5"/>
+		</g>
+		<g id="shape20-30" transform="translate(16.2639,-64.7499)">
+			<title>圆角的矩形</title>
+			<path d="M42.52 525.02 L391.18 525.02 A42.519 42.519 -180 0 0 433.7 482.5 A42.519 42.519 -180 0 0 391.18 439.98 L42.52
+						 439.98 A42.519 42.519 -180 0 0 -0 482.5 A42.519 42.519 -180 0 0 42.52 525.02 Z" class="st1"/>
+		</g>
+		<g id="shape26-32" transform="translate(389.02,-95.6476)">
+			<title>工作表.26</title>
+			<desc>Data Store</desc>
+			<rect x="0" y="495.257" width="52.4409" height="29.7638" class="st6"/>
+			<text x="14.22" y="506.54" class="st7">Data <tspan x="11.22" dy="1.2em" class="st8">Store</tspan></text>		</g>
+		<g id="group28-36" transform="translate(48.8624,-74.6712)">
+			<title>凹槽</title>
+			<g id="shape28-37">
+				<rect x="0" y="459.824" width="212.598" height="65.1969" class="st9"/>
+			</g>
+			<g id="group29-39">
+				<title>工作表.29</title>
+				<g id="shape30-40">
+					<title>工作表.30</title>
+					<path d="M17.01 476.83 L0 476.83 L0 459.82 L17.01 459.82 L17.01 476.83 Z" class="st10"/>
+				</g>
+				<g id="shape31-42">
+					<title>工作表.31</title>
+					<path d="M34.02 525.02 L17.01 525.02 A17.0083 17.0083 0 0 1 0 508.01 L0 508.84 L17.01 508.84 L34.02 525.02 Z"
+							class="st10"/>
+				</g>
+				<g id="shape32-44">
+					<title>工作表.32</title>
+					<path d="M195.59 525.02 L34.02 525.02 A17.0079 17.0079 0 0 1 17.01 508.01 L17.01 476.83 A17.0079 17.0079 0 0
+								 1 34.02 459.82 L195.59 459.82 A17.0079 17.0079 0 0 1 212.6 476.83 L212.6 508.01 A17.0079 17.0079
+								 0 0 1 195.59 525.02 Z" class="st10"/>
+				</g>
+				<g id="shape29-46">
+					<rect x="0" y="459.824" width="212.598" height="65.1969" class="st9"/>
+				</g>
+			</g>
+			<g id="shape33-48" transform="translate(-20.9966,-16.1853)">
+				<title>工作表.33</title>
+				<desc>ALTO Model</desc>
+				<rect x="0" y="493.017" width="38.0045" height="32.0037" class="st9"/>
+				<text x="9" y="506.02" class="st11">ALTO <tspan x="6.5" dy="1.2em" class="st8">Model</tspan></text>			</g>
+		</g>
+		<g id="shape21-52" transform="translate(82.8781,-93.0964)">
+			<title>矩形.21</title>
+			<desc>Static Maps</desc>
+			<rect x="0" y="495.257" width="67.1363" height="29.7638" class="st1"/>
+			<text x="6.07" y="513.14" class="st11">Static Maps</text>		</g>
+		<g id="shape34-55" transform="translate(171.274,-93.0964)">
+			<title>矩形.34</title>
+			<desc>Derived Maps</desc>
+			<rect x="0" y="495.257" width="72.2835" height="29.7638" class="st1"/>
+			<text x="6.14" y="513.14" class="st11">Derived Maps</text>		</g>
+		<g id="shape35-58" transform="translate(268.547,-74.4474)">
+			<title>矩形.35</title>
+			<desc>Hosts</desc>
+			<rect x="0" y="495.257" width="35.4331" height="29.7638" class="st1"/>
+			<text x="5.22" y="513.14" class="st11">Hosts</text>		</g>
+		<g id="shape60-61" transform="translate(311.067,-74.4474)">
+			<title>矩形.60</title>
+			<desc>Nodes</desc>
+			<rect x="0" y="495.257" width="35.4331" height="29.7638" class="st1"/>
+			<text x="5.22" y="513.14" class="st11">Nodes</text>		</g>
+		<g id="shape61-64" transform="translate(353.587,-74.4474)">
+			<title>矩形.61</title>
+			<desc>Links</desc>
+			<rect x="0" y="495.257" width="35.4331" height="29.7638" class="st1"/>
+			<text x="5.22" y="513.14" class="st11">Links</text>		</g>
+		<g id="shape62-67" transform="translate(268.547,-110.328)">
+			<title>矩形.62</title>
+			<desc>Topology</desc>
+			<rect x="0" y="495.257" width="119.055" height="29.7638" class="st1"/>
+			<text x="39.53" y="513.14" class="st11">Topology</text>		</g>
+		<g id="shape67-70" transform="translate(254.374,-451.396)">
+			<title>动态连接线.67</title>
+			<path d="M7.09 525.02 L7.09 489.3" class="st3"/>
+		</g>
+		<g id="shape70-75" transform="translate(185.373,-0.12)">
+			<title>矩形.70</title>
+			<desc>ALTO Hosttracker</desc>
+			<rect x="0" y="488.737" width="152.176" height="36.2835" class="st1"/>
+			<text x="12.09" y="511.68" class="st2">ALTO Hosttracker</text>		</g>
+		<g id="shape71-78" transform="translate(57.3663,-271.112)">
+			<title>矩形.71</title>
+			<desc>ALTO Manager</desc>
+			<rect x="0" y="488.737" width="119.055" height="36.2835" class="st1"/>
+			<text x="11.53" y="511.68" class="st2">ALTO Manager</text>		</g>
+		<g id="shape72-81" transform="translate(123.757,-271.112)">
+			<title>动态连接线.72</title>
+			<path d="M-6.86 525.02 L-7.31 673.27" class="st3"/>
+		</g>
+		<g id="shape73-86" transform="translate(261.461,-36.4035)">
+			<title>动态连接线.73</title>
+			<path d="M0 525.02 L0 514.39 L-54.04 514.39 L-54.04 468.33" class="st3"/>
+		</g>
+		<g id="shape74-91" transform="translate(261.461,-36.4035)">
+			<title>动态连接线.74</title>
+			<path d="M0 525.02 L0 514.39 L24.8 514.39 L24.8 486.98" class="st3"/>
+		</g>
+		<g id="shape75-96" transform="translate(57.3663,-415.112)">
+			<title>矩形.75</title>
+			<desc>Karaf CLI</desc>
+			<rect x="0" y="488.737" width="119.055" height="36.2835" class="st1"/>
+			<text x="23.53" y="511.68" class="st2">Karaf CLI</text>		</g>
+		<g id="shape76-99" transform="translate(109.807,-415.112)">
+			<title>动态连接线.76</title>
+			<path d="M7.09 525.02 L7.09 632.74" class="st3"/>
+		</g>
+		<g id="shape77-104" transform="translate(57.3663,-487.679)">
+			<title>矩形.77</title>
+			<desc>Network Manager</desc>
+			<rect x="0" y="488.737" width="119.055" height="36.2835" class="st1"/>
+			<text x="31.53" y="502.08" class="st2">Network <tspan x="31.53" dy="1.2em" class="st8">Manager</tspan></text>		</g>
+		<g id="shape78-108" transform="translate(109.807,-487.679)">
+			<title>动态连接线.78</title>
+			<path d="M7.09 525.02 L7.09 561.3" class="st3"/>
+		</g>
+		<g id="shape79-113" transform="translate(270.412,-467.27)">
+			<title>工作表.79</title>
+			<desc>Request</desc>
+			<rect x="0" y="502.343" width="67.1363" height="22.6772" class="st6"/>
+			<text x="12.57" y="517.28" class="st7">Request</text>		</g>
+		<g id="shape80-116" transform="translate(199.546,-447.427)">
+			<title>工作表.80</title>
+			<desc>Response</desc>
+			<rect x="0" y="502.343" width="67.1363" height="22.6772" class="st6"/>
+			<text x="9.57" y="517.28" class="st7">Response</text>		</g>
+		<g id="shape81-119" transform="translate(275.634,-343.112)">
+			<title>动态连接线.81</title>
+			<path d="M0 525.02 C-14.17 597.87 -54.13 632.75 -85.02 646.27 C-118.79 661.05 -141.73 650.31 -159.19 745.27"
+					class="st12"/>
+		</g>
+		<g id="shape82-122" transform="translate(275.634,-343.112)">
+			<title>动态连接线.82</title>
+			<path d="M0 525.02 C0 535.65 23.17 535.65 46.34 535.65 C70.16 535.65 93.99 535.65 93.99 560.74" class="st3"/>
+		</g>
+		<g id="shape83-127" transform="translate(369.625,-271.112)">
+			<title>动态连接线.83</title>
+			<path d="M0 525.02 C-0 535.65 -13.59 535.65 -25.23 535.65 C-48.31 535.65 -63.69 535.65 -89.69 535.65 C-119.14 535.65
+						 -162.21 535.65 -162.21 673.27" class="st3"/>
+		</g>
+		<g id="shape84-132" transform="translate(362.538,-271.112)">
+			<title>动态连接线.84</title>
+			<path d="M7.09 525.02 L7.09 553.37" class="st3"/>
+		</g>
+		<g id="shape85-137" transform="translate(369.625,-206.482)">
+			<title>动态连接线.85</title>
+			<path d="M0 525.02 C-1.86 556.2 -37.3 546.28 -41.55 591.41" class="st3"/>
+		</g>
+	</g>
+</svg>
