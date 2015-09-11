@@ -16,6 +16,10 @@ This section will introduces the architecture of ALTO.
 
 ![ALTO Worlflow](resource/alto-workflow.svg)
 
+![ALTO Service Sequence](resource/alto-service-sequence.svg)
+
+![ALTO HostTracker Sequence](resource/alto-hosttracker-sequence.svg)
+
 ### The modules in ALTO
 
 - alto-common: Provides the base utilities for ALTO. It contains the exceptions, RFC JSON/YANG JSON converters and other utilities.

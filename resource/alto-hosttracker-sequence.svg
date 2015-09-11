@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- 由 Microsoft Visio, SVG Export 生成 alto-hosttracker-sequence.svg 页-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		width="6.349in" height="4.77152in" viewBox="0 0 457.128 343.549" xml:space="preserve" color-interpolation-filters="sRGB"
+		class="st9">
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st2 {stroke:#000000;stroke-dasharray:5.25,3.75;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st3 {fill:#000000;font-family:宋体;font-size:1.00001em;font-weight:bold}
+		.st4 {marker-end:url(#mrkr3-64);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st5 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.18796992481203}
+		.st6 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2}
+		.st7 {fill:#000000;font-family:宋体;font-size:0.666664em}
+		.st8 {marker-end:url(#mrkr3-64);stroke:#000000;stroke-dasharray:5.25,3.75;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st9 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Markers">
+		<g id="lend3">
+			<path d="M 2 1 L 0 0 L 2 -1 " style="stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+		</g>
+		<marker id="mrkr3-64" class="st5" orient="auto" markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend3" transform="scale(-5.32,-5.32) "/>
+		</marker>
+	</defs>
+	<g>
+		<title>页-1</title>
+		<g id="group1-1" transform="translate(0.375,-280.103)">
+			<title>参与者生命线</title>
+			<desc>Network Node</desc>
+			<g id="shape2-2" transform="translate(22.6772,0)">
+				<title>工作表.2</title>
+				<rect x="0" y="318.038" width="51.0236" height="25.5118" class="st1"/>
+			</g>
+			<g id="shape3-4" transform="translate(39.685,-29.0551)">
+				<title>工作表.3</title>
+				<path d="M3.4 343.55 L3.4 326.54 L3.4 333.34 L0 333.34 L0 319.74 L1.7 318.04 L15.31 318.04 L17.01 319.74 L17.01 333.34
+							 L13.61 333.34 L13.61 326.54 L13.61 343.55 L8.5 343.55 L8.5 329.94 L8.5 343.55 L3.4 343.55 ZM11.91 312.94
+							 A3.40157 3.40157 -180 1 0 5.1 312.94 A3.40157 3.40157 -180 1 0 11.91 312.94 Z" class="st1"/>
+			</g>
+			<g id="shape4-6" transform="translate(32.126,280.103)">
+				<title>工作表.4</title>
+			</g>
+			<g id="shape5-8" transform="translate(391.738,343.549) rotate(90)">
+				<title>工作表.5</title>
+				<path d="M0 343.55 L262.49 343.55" class="st2"/>
+			</g>
+			<g id="shape1-11">
+				<rect x="0" y="318.038" width="96.378" height="25.5118" class="st1"/>
+				<text x="11.91" y="334.39" class="st3">Network Node</text>			</g>
+		</g>
+		<g id="group6-14" transform="translate(238.485,-280.103)">
+			<title>对象生命线</title>
+			<desc>HostTracker</desc>
+			<g id="shape7-15" transform="translate(22.6772,0)">
+				<title>工作表.7</title>
+				<rect x="0" y="318.038" width="51.0236" height="25.5118" class="st1"/>
+			</g>
+			<g id="shape8-17" transform="translate(39.685,-29.0551)">
+				<title>工作表.8</title>
+				<path d="M8.5 343.55 a0 0 0 1 1 0 0 a0 0 0 1 1 0 0 Z" class="st1"/>
+			</g>
+			<g id="shape9-19" transform="translate(32.126,280.103)">
+				<title>工作表.9</title>
+			</g>
+			<g id="shape10-21" transform="translate(391.738,343.549) rotate(90)">
+				<title>工作表.10</title>
+				<path d="M0 343.55 L262.49 343.55" class="st2"/>
+			</g>
+			<g id="shape6-24">
+				<rect x="0" y="318.038" width="96.378" height="25.5118" class="st1"/>
+				<text x="14.93" y="334.39" class="st3">HostTracker</text>			</g>
+		</g>
+		<g id="group11-27" transform="translate(360.375,-280.103)">
+			<title>对象生命线.11</title>
+			<desc>Data Store</desc>
+			<g id="shape12-28" transform="translate(22.6772,0)">
+				<title>工作表.12</title>
+				<rect x="0" y="318.038" width="51.0236" height="25.5118" class="st1"/>
+			</g>
+			<g id="shape13-30" transform="translate(39.685,-29.0551)">
+				<title>工作表.13</title>
+				<path d="M8.5 343.55 a0 0 0 1 1 0 0 a0 0 0 1 1 0 0 Z" class="st1"/>
+			</g>
+			<g id="shape14-32" transform="translate(32.126,280.103)">
+				<title>工作表.14</title>
+			</g>
+			<g id="shape15-34" transform="translate(391.738,343.549) rotate(90)">
+				<title>工作表.15</title>
+				<path d="M0 343.55 L262.49 343.55" class="st2"/>
+			</g>
+			<g id="shape11-37">
+				<rect x="0" y="318.038" width="96.378" height="25.5118" class="st1"/>
+				<text x="17.95" y="334.39" class="st3">Data Store</text>			</g>
+		</g>
+		<g id="shape16-40" transform="translate(-290.733,171.162) rotate(-90)">
+			<title>激活</title>
+			<rect x="0" y="335.045" width="73.7008" height="8.50394" class="st1"/>
+		</g>
+		<g id="shape17-42" transform="translate(-52.6232,205.178) rotate(-90)">
+			<title>激活.17</title>
+			<rect x="0" y="335.045" width="56.6929" height="8.50394" class="st1"/>
+		</g>
+		<g id="group19-44" transform="translate(119.43,-280.103)">
+			<title>对象生命线.19</title>
+			<desc>ODL Controller</desc>
+			<g id="shape20-45" transform="translate(22.6772,0)">
+				<title>工作表.20</title>
+				<rect x="0" y="318.038" width="51.0236" height="25.5118" class="st1"/>
+			</g>
+			<g id="shape21-47" transform="translate(39.685,-29.0551)">
+				<title>工作表.21</title>
+				<path d="M8.5 343.55 a0 0 0 1 1 0 0 a0 0 0 1 1 0 0 Z" class="st1"/>
+			</g>
+			<g id="shape22-49" transform="translate(32.126,280.103)">
+				<title>工作表.22</title>
+			</g>
+			<g id="shape23-51" transform="translate(391.738,343.549) rotate(90)">
+				<title>工作表.23</title>
+				<path d="M0 343.55 L262.49 343.55" class="st2"/>
+			</g>
+			<g id="shape19-54">
+				<rect x="0" y="318.038" width="96.378" height="25.5118" class="st1"/>
+				<text x="5.86" y="334.39" class="st3">ODL Controller</text>			</g>
+		</g>
+		<g id="shape24-57" transform="translate(-171.678,225.021) rotate(-90)">
+			<title>激活.24</title>
+			<rect x="0" y="335.045" width="110.551" height="8.50394" class="st1"/>
+		</g>
+		<g id="shape25-59" transform="translate(52.8159,-221.993)">
+			<title>异步消息</title>
+			<desc>OpenFlow Msg</desc>
+			<path d="M0 336.46 L110.55 336.46" class="st4"/>
+			<rect x="31.2748" y="331.663" width="48.0015" height="9.59985" class="st6"/>
+			<text x="31.27" y="338.86" class="st7">OpenFlow Msg</text>		</g>
+		<g id="shape26-67" transform="translate(163.367,-204.985)">
+			<title>返回消息</title>
+			<desc>OpenFlow Ack</desc>
+			<path d="M0 336.46 L-110.55 336.46" class="st8"/>
+			<rect x="-79.2764" y="331.663" width="48.0015" height="9.59985" class="st6"/>
+			<text x="-79.28" y="338.86" class="st7">OpenFlow Ack</text>		</g>
+		<g id="shape27-74" transform="translate(171.871,-187.978)">
+			<title>异步消息.27</title>
+			<desc>Notification</desc>
+			<path d="M0 336.46 L110.55 336.46" class="st4"/>
+			<rect x="31.2748" y="331.663" width="48.0015" height="9.59985" class="st6"/>
+			<text x="31.27" y="338.86" class="st7">Notification</text>		</g>
+		<g id="shape28-81" transform="translate(69.2666,261.871) rotate(-90)">
+			<title>激活.28</title>
+			<rect x="0" y="335.045" width="36.8504" height="8.50394" class="st1"/>
+		</g>
+		<g id="shape32-83" transform="translate(282.422,-131.285)">
+			<title>返回消息.32</title>
+			<desc>Data Transaction</desc>
+			<path d="M0 336.46 L-110.55 336.46" class="st8"/>
+			<rect x="-87.2766" y="331.663" width="64.002" height="9.59985" class="st6"/>
+			<text x="-87.28" y="338.86" class="st7">Data Transaction</text>		</g>
+		<g id="shape33-90" transform="translate(167.619,-111.442)">
+			<title>异步消息.33</title>
+			<desc>Update Topology</desc>
+			<path d="M0 336.46 L236.69 336.46" class="st4"/>
+			<rect x="88.3455" y="331.663" width="60.0018" height="9.59985" class="st6"/>
+			<text x="88.35" y="338.86" class="st7">Update Topology</text>		</g>
+	</g>
+</svg>
