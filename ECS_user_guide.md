@@ -4,7 +4,7 @@
 
 ## Introduction
 
-ECS is the abbreviation of **Endpoint Cost Service**, which provides the routing cost between endpoints. ECS accepts the pair of endpoints and returns the routing cost of the pair. It provides the routing cost by collecting raw networking data from OpenDayLight with different metrics such as hop counts, bandwidth and user-defined routing cost. This design document contains the information about our latest ECS implementation.
+ECS is the abbreviation of **Endpoint Cost Service**, which provides the routing cost between endpoints. ECS accepts the pair of endpoints and returns the routing cost of the pair. It provides the routing cost by collecting raw networking data from OpenDayLight with different metrics such as hop counts, bandwidth and user-defined routing cost. This document contains the information about how to use ECS in ALTO.
 
 ## Features
 
@@ -31,23 +31,25 @@ The features that ECS provides are showed below:
 * [Development Environment Setup for ODL](https://wiki.opendaylight.org/view/GettingStarted:Development_Environment_Setup).
 	* **Important:** Don’t forget to edit your ~/.m2/settings.xml file otherwise you will not be able to download any ODL Java dependencies.
 
-#### Get ALTO project
+#### Get ALTO server
 
-TODO
+* Get the ALTO server project. (TODO)
 
-#### Build and Install ALTO
+#### Build and Install ALTO server
 
 * Enter your ALTO project root directory.
 * Checkout to feature/ecs branch and run `mvn install` to build ALTO project.
 
 ### Replace L2 Switch
 
-* Get modified l2switch code.(TODO)
+* Get modified l2switch code. (TODO)
 * Put the l2switch folder into ~/.m2/repository/org/opendaylight/ and replace the original l2switch folder.
 
 ## Using Endpoint Cost Service in ALTO
 
-### Run ALTO in Karaf
+### ALTO Server
+
+#### Run ALTO Server in Karaf
 
 * Enter into alto-karaf/target/assembly/ directory.
 * Run command `./bin/karaf` to start the karaf.
@@ -72,20 +74,88 @@ $ ./bin/karaf
  opendaylight-user@root>
 ```
 
-### Input 
+#### Connect to the alto server
+* Connet the network to the alto server.
+
+	For emulation: you can use mininet to emulate a network environment.
+
+```
+sudo mn --contorller remote,<hostname> --topo tree,3 --switch ovsk,protocols=OpenFlow13
+```
+
+### ALTO Client
+
+#### Send ECS request
+
+* ALTO client send the ECS request to the ALTO server.
+
+```
+curl -l -H "Content-type: application/alto-endpointcostparams+json" -X POST -d `cat XXX.json` 192.168.1.24:8080/controller/nb/v2/alto/endpointcost/lookup -v
+```
+where XXX.json contains the infromation of the request including cost type, sources and destinations.
+
+**XXX.json:**
+
+```
+object {
+	CostType	cost-type;
+	[JSONString	constraints<0..*>;]
+	EndpointFilter	endpoints;
+} ReqEndpointCostMap;
+
+object {
+	[TypedEndpointAddr srcs<0..*>;]
+	[TypedEndpointAddr dsts<0..*>;]
+} EndpointFilter;
+```
+
+e.g. :
+
+```
+{
+    "cost-type": {"cost-mode" : "numerical",
+                  "cost-metric" : "routingcost"},
+    "endpoints" : {
+      "srcs": [ "ipv4:10.0.0.1" ],
+      "dsts": [
+        "ipv4:10.0.0.2",
+        "ipv4:10.0.0.3",
+        "ipv4:10.0.0.4"
+      ]
+    }
+}
+```
+
+**optional parameters:**
+
+cost-mode: numerical/ordinal
+
+* numerical: This mode indicates that it is safe to perform numerical operations on the returned costs. The values are floating-point numbers.
+* ordinal: This mode indicates that the cost values in a cost map represent ranking, not actual costs. The values are non-negative integers, with a lower value indicating a higher preference.
+
+ 
+cost-metric: hopcount/routingcost/bandwidth
+
+* hopcout: get the number of the hops between src and dst.
+* routingcost: get the routing cost between src and dst.
+* bandwidth: get the availale bandwidth between src and dst.
 
 
-### Hop count
+#### Get the result
 
-### Routing cost
+* ALTO client wil get the response from the ALTO server with the corresponding results.
 
-### Available bandwidth
+```
+{"meta":{"cost-type":{"cost-mode":"numerical","cost-metric":"routingcost"}},"endpoint-cost-map":{"ipv4:10.0.0.1":{"ipv4:10.0.0.4":200.0,"ipv4:10.0.0.3":150.0,"ipv4:10.0.0.2":100.0}}}
+```
 
+### Note:
 
-
+If you meet any problem while deploying and using, you can email ***wangjunzhuo200@gmail.com***, ***jingxuan.n.zhang@gmail.com*** or ***92yichenqian@tongji.edu.cn*** for help.
 
 ## Appendix
 
-Appendix A:
+### Appendix A: Common Problem List
 
-Appendix B:
+N/A
+
