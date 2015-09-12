@@ -75,24 +75,24 @@ $ ./bin/karaf
 ```
 
 #### Connect to the alto server
-* Connet the network to the alto server.
+Connect the network to the alto server.
 
-	For emulation: you can use mininet to emulate a network environment.
+* For emulation: you can use mininet to emulate a network environment.
 
 ```
-sudo mn --contorller remote,<hostname> --topo tree,3 --switch ovsk,protocols=OpenFlow13
+sudo mn --controller remote,192.168.0.24 --topo tree,3 --switch ovsk,protocols=OpenFlow13
 ```
 
 ### ALTO Client
 
 #### Send ECS request
 
-* ALTO client send the ECS request to the ALTO server.
+ALTO client send the ECS request to the ALTO server.
 
 ```
 curl -l -H "Content-type: application/alto-endpointcostparams+json" -X POST -d `cat XXX.json` 192.168.1.24:8080/controller/nb/v2/alto/endpointcost/lookup -v
 ```
-where XXX.json contains the infromation of the request including cost type, sources and destinations.
+where XXX.json contains the information of the request including cost type, sources and destinations.
 
 **XXX.json:**
 
@@ -138,12 +138,12 @@ cost-metric: hopcount/routingcost/bandwidth
 
 * hopcout: get the number of the hops between src and dst.
 * routingcost: get the routing cost between src and dst.
-* bandwidth: get the availale bandwidth between src and dst.
+* bandwidth: get the available bandwidth between src and dst.
 
 
 #### Get the result
 
-* ALTO client wil get the response from the ALTO server with the corresponding results.
+* ALTO client will get the response from the ALTO server with the corresponding results.
 
 ```
 {"meta":{"cost-type":{"cost-mode":"numerical","cost-metric":"routingcost"}},"endpoint-cost-map":{"ipv4:10.0.0.1":{"ipv4:10.0.0.4":200.0,"ipv4:10.0.0.3":150.0,"ipv4:10.0.0.2":100.0}}}
