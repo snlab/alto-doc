@@ -4,9 +4,6 @@ org.opendaylight.alto.commons.helper
 org.opendaylight.alto.commons.types.converter
 org.opendaylight.alto.commons.types.model150404
 org.opendaylight.alto.commons.types.rfc7285
-org.opendaylight.alto.ext.cli.fileconverter
-org.opendaylight.alto.ext.fake
-org.opendaylight.alto.ext.fsmap
 org.opendaylight.alto.manager
 org.opendaylight.alto.network.routing.flow
 org.opendaylight.alto.network.routing.route
