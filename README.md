@@ -2,3 +2,4 @@
 - Java docs of ALTO: [here](./javadoc/index.html)
 - Design doc for ECS: [here](./ECS_design_document.md)
 - User guide for ECS: [here](./ECS_user_guide.md)
+- Performance test report: [here](./performance_test_report.md)
