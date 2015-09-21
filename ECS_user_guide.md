@@ -38,11 +38,13 @@ The features that ECS provides are showed below:
 #### Build and Install ALTO server
 
 * Enter your ALTO project root directory.
+
 * Checkout to feature/ecs branch and run `mvn install` to build ALTO project.
 
 ### Replace L2 Switch
 
-* Get modified l2switch code. (TODO)
+* Get modified l2switch code from [GitHub](https://github.com/cs512/l2switch.git).
+
 * Put the l2switch folder into ~/.m2/repository/org/opendaylight/ and replace the original l2switch folder.
 
 ## Using Endpoint Cost Service in ALTO
@@ -52,7 +54,9 @@ The features that ECS provides are showed below:
 #### Run ALTO Server in Karaf
 
 * Enter into alto-karaf/target/assembly/ directory.
+
 * Run command `./bin/karaf` to start the karaf.
+
 * It will take some time to install features, initialize services and download dependencies. Be patient and check ./data/log/karaf.log file to track the latest status.
 
 ``` bash
