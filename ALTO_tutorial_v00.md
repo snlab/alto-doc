@@ -61,7 +61,10 @@ You can use Mininet to emulate the real networks.
 
 ### Installing Mininet
 
-TODO
+*[Option 1: Mininet VM Installation (easy, recommended)](http://mininet.org/download/#option-1-mininet-vm-installation-easy-recommended)
+*[Option 2: Native Installation from Source](http://mininet.org/download/#option-2-native-installation-from-source)
+*[Option 3: Installation from Packages](http://mininet.org/download/#option-3-installation-from-packages)
+*[Option 4. Upgrading an existing Mininet Installation](http://mininet.org/download/#option-4-upgrading-an-existing-mininet-installation) 
 
 ### Using Mininet to build the networks
 
