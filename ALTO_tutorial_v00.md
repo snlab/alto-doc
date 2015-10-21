@@ -74,9 +74,29 @@ There are four ways to install Mininet.
 ### Using Mininet to build the networks
 
   ```
-  $ sudo mn --controller remote,<HOST_IP> --topo tree,3 --switch ovsk,protocols=OpenFlow13
+  $ sudo mn --controller remote,<controller_IP> --topo tree,3 --switch ovsk,protocols=OpenFlow13
   ```
-where `HOST_IP` is the IP address of the controller.
+where `controller_IP` is the IP address of the controller and the default port is 6633.
+
+If you want to use self-defined port, you can run the following command.
+
+```bash
+$ sudo mn --controller=remote,ip=<controller_IP>,port=<controller_port>
+```
+
+####Changing Topology Size and Type
+
+The default topology is a single switch connected to two hosts. You could change this to a different topo with ```--topo```, and pass parameters for that topology’s creation. 
+
+For example, to create a topology with one switch and three hosts:
+
+```$ sudo mn --topo single,3```
+
+Another example, with a linear topology (where each switch has one host, and all switches connect in a line):
+
+```$ sudo mn --topo linear,4```
+
+
 
 TODO
 
@@ -91,9 +111,9 @@ If you simply want to query the properties between a pair of nodes. You can use 
 ALTO client send the ECS request to the ALTO server.
 
 ``` bash
-curl -l -H "Content-type: application/alto-endpointcostparams+json" -X POST -d `cat example_input.json` <HOST_IP>:8080/controller/nb/v2/alto/endpointcost/lookup -v
+curl -l -H "Content-type: application/alto-endpointcostparams+json" -X POST -d 'cat example_input.json' <controller_IP>:8080/controller/nb/v2/alto/endpointcost/lookup -v
 ```
-where `HOST_IP` is the IP address of the controller and  `example_input.json` contains the information of the request including cost type, sources and destinations.
+where `controller_IP` is the IP address of the controller and  `example_input.json` contains the information of the request including cost type, sources and destinations.
 
 **example_input.json:**
 
