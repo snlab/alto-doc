@@ -73,9 +73,9 @@ There are four ways to install Mininet.
 
 ### Using Mininet to build the networks
 
-  ```
-  $ sudo mn --controller remote,<controller_IP> --topo tree,3 --switch ovsk,protocols=OpenFlow13
-  ```
+```
+$ sudo mn --controller remote,<controller_IP> --topo tree,3 --switch ovsk,protocols=OpenFlow13
+```
 where `controller_IP` is the IP address of the controller and the default port is 6633.
 
 If you want to use self-defined port, you can run the following command.
@@ -86,7 +86,7 @@ $ sudo mn --controller=remote,ip=<controller_IP>,port=<controller_port>
 
 ####Changing Topology Size and Type
 
-The default topology is a single switch connected to two hosts. You could change this to a different topo with ```--topo```, and pass parameters for that topology’s creation. 
+The default topology is a single switch connected to two hosts. You could change this to a different topology with ```--topo```, and pass parameters for that topology’s creation. 
 
 For example, to create a topology with one switch and three hosts:
 
@@ -95,6 +95,16 @@ For example, to create a topology with one switch and three hosts:
 Another example, with a linear topology (where each switch has one host, and all switches connect in a line):
 
 ```$ sudo mn --topo linear,4```
+
+####Custom Topologies
+
+Custom topologies can be easily defined as well by using a simple Python API. An example is provided in [custom/topo-2sw-2host.py](http://mininet.org/walkthrough/#custom-topologies). 
+
+When a custom mininet file is provided, it can add new topologies, switch types, and tests to the command-line. For example:
+
+```
+$ sudo mn --custom ~/mininet/custom/topo-2sw-2host.py --topo mytopo --test pingall
+```
 
 
 
