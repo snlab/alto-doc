@@ -1,12 +1,14 @@
 # ALTO Tutorial
 
-## Deployment of ALTO Server
+## Table of Contents
 
-### Downloading ALTO Server
+TODO
+
+## Installing and Starting ALTO Server
+
+### Build from source code
 
 You can get ALTO server from the Github.
-
-### Installing ALTO Server
 
 #### Preparations
 
@@ -55,11 +57,24 @@ Before install ALTO server you need the preparations below, including Java JDK, 
 
    opendaylight-user@root>
 ```
-## Using Mininet for Emulation
+
+## Usage
+
+### Managing and Querying Data in ALTO
+
+You can manage and query the data in ALTO. See [Administering or Managing ALTO](https://wiki.opendaylight.org/view/ALTO:Lithium_User_Guide#Administering_or_Managing_ALTO) for details.
+
+### Use Cases
+
+Two use cases are showed below: querying the cost and server selection. See [ALTO Client](#alto-clinet) for details.
+
+## Connecting the Network to the Controller
+
+### Using Mininet for Emulation
 
 You can use Mininet to emulate the real networks.
 
-### Installing Mininet
+#### Installing Mininet
 
 There are four ways to install Mininet.
 
@@ -69,9 +84,9 @@ There are four ways to install Mininet.
 
 * [Option 3: Installation from Packages](http://mininet.org/download/#option-3-installation-from-packages)
 
-* [Option 4. Upgrading an existing Mininet Installation](http://mininet.org/download/#option-4-upgrading-an-existing-mininet-installation) 
+* [Option 4. Upgrading an existing Mininet Installation](http://mininet.org/download/#option-4-upgrading-an-existing-mininet-installation)
 
-### Using Mininet to build the networks
+#### Using Mininet to build the networks
 
 ```
 $ sudo mn --controller remote,<controller_IP> --topo tree,3 --switch ovsk,protocols=OpenFlow13
@@ -84,9 +99,9 @@ If you want to use self-defined port, you can run the following command.
 $ sudo mn --controller=remote,ip=<controller_IP>,port=<controller_port>
 ```
 
-####Changing Topology Size and Type
+##### Changing Topology Size and Type
 
-The default topology is a single switch connected to two hosts. You could change this to a different topology with ```--topo```, and pass parameters for that topology’s creation. 
+The default topology is a single switch connected to two hosts. You could change this to a different topology with ```--topo```, and pass parameters for that topology’s creation.
 
 For example, to create a topology with one switch and three hosts:
 
@@ -96,9 +111,9 @@ Another example, with a linear topology (where each switch has one host, and all
 
 ```$ sudo mn --topo linear,4```
 
-####Custom Topologies
+##### Custom Topologies
 
-Custom topologies can be easily defined as well by using a simple Python API. An example is provided in [custom/topo-2sw-2host.py](http://mininet.org/walkthrough/#custom-topologies). 
+Custom topologies can be easily defined as well by using a simple Python API. An example is provided in [custom/topo-2sw-2host.py](http://mininet.org/walkthrough/#custom-topologies).
 
 When a custom mininet file is provided, it can add new topologies, switch types, and tests to the command-line. For example:
 
@@ -106,11 +121,9 @@ When a custom mininet file is provided, it can add new topologies, switch types,
 $ sudo mn --custom ~/mininet/custom/topo-2sw-2host.py --topo mytopo --test pingall
 ```
 
-
-
-TODO
-
+<span id="alto-clinet">
 ## ALTO Client
+</span>
 
 ### Querying the Properties
 
@@ -128,15 +141,10 @@ where `controller_IP` is the IP address of the controller and  `example_input.js
 **example_input.json:**
 
 ``` json
-{
-    "cost-type": {"cost-mode" : "numerical",
-                  "cost-metric" : "bandwidth"},
-    "endpoints" : {
-      "srcs": "ipv4:10.0.0.1",
-      "dsts": "ipv4:10.0.0.5"
-    }
-}
+{"cost-type":{"cost-mode":"numerical","cost-metric":"bandwidth"},"endpoints":{"srcs":"ipv4:10.0.0.1","dsts":"ipv4:10.0.0.5"}}
 ```
+
+*note*: There should be no space and newline in you JSON file.
 
 **optional parameters:**
 
@@ -158,11 +166,13 @@ cost-metric: hopcount/routingcost/bandwidth
 * ALTO client will get the response from the ALTO server with the corresponding results.
 
 ``` json
-{"meta":{"cost-type":{"cost-mode":"numerical","cost-metric":"bbandwidth"}},"endpoint-cost-map":{"ipv4:10.0.0.1":{"ipv4:10.0.0.5":10000000.0}}}
+{"meta":{"cost-type":{"cost-mode":"numerical","cost-metric":"bandwidth"}},"endpoint-cost-map":{"ipv4:10.0.0.1":{"ipv4:10.0.0.5":10000000.0}}}
 ```
 From the result you can see that the available bandwidth between two endpoints is 10GB.
 
 #### Changing of the network states
+
+Use iperf to generate the traffic between two hosts in mininet.
 
 TODO
 
